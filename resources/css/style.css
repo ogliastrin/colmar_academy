@@ -415,6 +415,7 @@ footer a {
 
   footer {
     color: #A6B0B3;
+    justify-content: center;
   }
 
   footer .right {
