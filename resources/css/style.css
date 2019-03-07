@@ -4,7 +4,9 @@ html {
   font-family: 'Spectral', serif;
 }
 
-h1, h2, h4 {
+h1,
+h2,
+h4 {
   font-weight: bold;
   color: #001f3f;
 }
@@ -29,8 +31,12 @@ p {
 }
 
 a {
-  color: #0074D9;
   text-decoration: none;
+}
+
+a,
+.blue {
+  color: #0074D9;
 }
 
 a:hover {
@@ -40,6 +46,10 @@ a:hover {
 img, video {
   width: 100%;
   height: auto;
+}
+
+.silver-background {
+  background-color: #DDDDDD;
 }
 
 .container-left {
@@ -76,14 +86,6 @@ img, video {
 
 .info h4 {
   margin: 0 0 .5rem 0;
-}
-
-.silver-background {
-  background-color: #DDDDDD;
-}
-
-.blue {
-  color: #0074D9;
 }
 
 /*Header*/
@@ -170,7 +172,7 @@ nav span {
 }
 
 /*Courses*/
-.courses-mobile {
+.courses .mobile {
   display: none;
 }
 
@@ -207,7 +209,7 @@ nav span {
 }
 
 /*Thesis*/
-.thesis-mobile {
+.thesis .mobile {
   display: none;
 }
 
@@ -255,6 +257,27 @@ footer {
 
 footer span {
   margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 824px) and (min-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -322,7 +345,7 @@ footer span {
     background-color: #FFFFFF;
   }
 
-  .courses-mobile {
+  .courses .mobile {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -332,7 +355,7 @@ footer span {
     border-bottom: 1px solid #AAAAAA;
   }
 
-  .courses-mobile h4 {
+  .courses .mobile h4 {
     padding: 1.25rem;
     background-color: #DDDDDD;
     margin-bottom: .5rem;
@@ -343,11 +366,11 @@ footer span {
   }
 
   /*Thesis*/
-  .thesis-desktop {
+  .thesis .desktop {
     display: none;
   }
 
-  .thesis-mobile {
+  .thesis .mobile {
     display: block;
   }
 
