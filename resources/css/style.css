@@ -170,21 +170,21 @@ nav span {
 }
 
 /*Main*/
-.main .mobile {
+main .mobile {
   display: none;
 }
 
-.main {
+main {
   display: flex;
   position: relative;
   top: 4rem;
 }
 
-.main .container-right {
+main .container-right {
   border-left: 1px solid #00212A;
 }
 
-.main .info {
+main .info {
   border-bottom: 1px solid #00212A;
 }
 
@@ -335,21 +335,21 @@ footer a {
   }
 
   /*Main*/
-  .main .desktop {
+  main .desktop {
     display: none;
   }
 
-  .main .mobile {
+  main .mobile {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #00212A;
   }
 
-  .main .mobile .img {
+  main .mobile .img {
     padding: 1rem;
   }
 
-  .main .mobile .text {
+  main .mobile .text {
     padding: 0 2rem 3rem 2rem;
   }
 
@@ -423,6 +423,6 @@ footer a {
   }
 
   footer span {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }
